@@ -1,0 +1,30 @@
+{
+  "name": "botkit-ponko2",
+  "description": "Ponko2 Slack Bot",
+  "version": "0.0.1",
+  "author": "Takahito Nakano",
+  "dependencies": {
+    "@ponko2/botkit-heroku-keepalive": "0.0.2",
+    "@ponko2/botkit-script-loader": "0.0.1",
+    "@ponko2/calendar": "0.0.1",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "botkit": "^0.0.7",
+    "botkit-storage-redis": "^1.0.1",
+    "cron": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-config-ponko2": "^2.0.1"
+  },
+  "engines": {
+    "node": "^4.2.6",
+    "npm": "^2.14.7"
+  },
+  "license": "MIT",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  }
+}

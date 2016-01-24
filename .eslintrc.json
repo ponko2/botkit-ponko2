@@ -1,0 +1,6 @@
+{
+  "extends": "ponko2",
+  "rules": {
+    "no-console": 0
+  }
+}
