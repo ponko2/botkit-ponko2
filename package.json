@@ -11,7 +11,8 @@
     "babel-register": "^6.5.2",
     "botkit": "^0.0.7",
     "botkit-storage-redis": "^1.0.1",
-    "cron": "^1.1.0"
+    "cron": "^1.1.0",
+    "node-dice-js": "^0.1.2"
   },
   "devDependencies": {
     "eslint": "^2.1.0",
