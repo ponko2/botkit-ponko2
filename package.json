@@ -26,6 +26,7 @@
   "main": "app.js",
   "private": true,
   "scripts": {
+    "lint": "eslint .",
     "start": "node app.js"
   }
 }
