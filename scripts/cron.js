@@ -11,7 +11,7 @@ import Calendar  from '@ponko2/calendar';
  *
  * @callback onTickCallback
  *
- * @param {Object} bot - Bitkitのオブジェクト
+ * @param {object} bot - Bitkitのオブジェクト
  *
  * @returns {void}
  */
@@ -32,7 +32,7 @@ function morningJob(bot) {
  *
  * @callback onTickCallback
  *
- * @param {Object} bot - Bitkitのオブジェクト
+ * @param {object} bot - Bitkitのオブジェクト
  *
  * @returns {void}
  */
@@ -48,7 +48,7 @@ function middayJob(bot) {
  *
  * @callback onTickCallback
  *
- * @param {Object} bot - Bitkitのオブジェクト
+ * @param {object} bot - Bitkitのオブジェクト
  *
  * @returns {void}
  */
