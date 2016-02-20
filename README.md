@@ -1,5 +1,7 @@
 # botkit-ponko2
 
+[![Build Status](https://travis-ci.org/ponko2/botkit-ponko2.svg?branch=master)](https://travis-ci.org/ponko2/botkit-ponko2)
+
 ## Usage
 
 ```sh
