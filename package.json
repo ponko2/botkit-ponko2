@@ -9,7 +9,7 @@
     "@ponko2/calendar": "0.1.0",
     "babel-preset-es2015": "^6.5.0",
     "babel-register": "^6.5.2",
-    "botkit": "^0.0.7",
+    "botkit": "^0.0.8",
     "botkit-storage-redis": "^1.0.1",
     "cron": "^1.1.0",
     "node-dice-js": "^0.1.2"
