@@ -1,3 +1,5 @@
+'use strict';
+
 /* eslint no-unused-vars: 0 */
 
 const CronJob  = require('cron').CronJob;

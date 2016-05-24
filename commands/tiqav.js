@@ -1,3 +1,5 @@
+'use strict';
+
 const punycode = require('punycode');
 
 module.exports = controller => {

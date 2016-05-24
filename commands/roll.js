@@ -1,3 +1,5 @@
+'use strict';
+
 const Dice = require('node-dice-js');
 
 module.exports = controller => {

@@ -1,3 +1,5 @@
+'use strict';
+
 const Calendar = require('@ponko2/calendar');
 
 module.exports = controller => {
