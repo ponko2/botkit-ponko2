@@ -37,7 +37,7 @@ module.exports = controller => {
     'mention',
     'ambient'
   ], (bot, message) => {
-    bot.reply(message, 'ヽ(*ﾟдﾟ)ノｶｲﾊﾞｰ');
+    bot.replyWithTyping(message, 'ヽ(*ﾟдﾟ)ノｶｲﾊﾞｰ');
   });
 
   controller.hears([
@@ -49,7 +49,7 @@ module.exports = controller => {
     'mention',
     'ambient'
   ], (bot, message) => {
-    bot.reply(message, 'トゥットゥルー');
+    bot.replyWithTyping(message, 'トゥットゥルー');
   });
 
   controller.hears([
@@ -61,7 +61,7 @@ module.exports = controller => {
     'mention',
     'ambient'
   ], (bot, message) => {
-    bot.reply(message, `<@${message.user}> もう寝なさい`);
+    bot.replyWithTyping(message, `<@${message.user}> もう寝なさい`);
   });
 
   controller.hears([
@@ -74,6 +74,6 @@ module.exports = controller => {
     'mention',
     'ambient'
   ], (bot, message) => {
-    bot.reply(message, `<@${message.user}> おやすみ`);
+    bot.replyWithTyping(message, `<@${message.user}> おやすみ`);
   });
 };
