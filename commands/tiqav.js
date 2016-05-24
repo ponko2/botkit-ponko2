@@ -1,4 +1,4 @@
-import punycode from 'punycode';
+const punycode = require('punycode');
 
 module.exports = controller => {
   controller.on('slash_command', (bot, message) => {

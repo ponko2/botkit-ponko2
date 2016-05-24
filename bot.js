@@ -1,8 +1,8 @@
-import Path            from 'path';
-import Botkit          from 'botkit';
-import redisStorage    from 'botkit-storage-redis';
-import ScriptLoader    from '@ponko2/botkit-script-loader';
-import HerokuKeepalive from '@ponko2/botkit-heroku-keepalive';
+const Path            = require('path');
+const Botkit          = require('botkit');
+const redisStorage    = require('botkit-storage-redis');
+const ScriptLoader    = require('@ponko2/botkit-script-loader');
+const HerokuKeepalive = require('@ponko2/botkit-heroku-keepalive');
 
 if (!process.env.BOTKIT_SLACK_TOKEN) {
   console.error('Error: Specify token in environment');

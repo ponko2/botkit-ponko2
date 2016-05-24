@@ -1,4 +1,4 @@
-import Calendar from '@ponko2/calendar';
+const Calendar = require('@ponko2/calendar');
 
 module.exports = controller => {
   const calendar = new Calendar();
