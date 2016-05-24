@@ -19,8 +19,8 @@
     "eslint-config-ponko2": "^3.3.1"
   },
   "engines": {
-    "node": "^4.2.6",
-    "npm": "^2.14.7"
+    "node": "^6.x",
+    "npm": "^3.x"
   },
   "license": "MIT",
   "main": "app.js",
