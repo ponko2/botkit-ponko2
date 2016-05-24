@@ -22,7 +22,7 @@
     "npm": "^3.x"
   },
   "license": "MIT",
-  "main": "app.js",
+  "main": "index.js",
   "private": true,
   "scripts": {
     "lint": "eslint .",
