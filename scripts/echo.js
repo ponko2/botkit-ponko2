@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = controller => {
   controller.hears([
     '[ぬヌ][ーぅゥ]*[るル][ーぅゥっッ]*[ぽポ][ーぉォっッ]*',

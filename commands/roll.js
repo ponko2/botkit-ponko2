@@ -1,4 +1,6 @@
-import Dice from 'node-dice-js';
+'use strict';
+
+const Dice = require('node-dice-js');
 
 module.exports = controller => {
   controller.on('slash_command', (bot, message) => {
