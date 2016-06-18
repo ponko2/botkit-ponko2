@@ -12,11 +12,12 @@ if (!process.env.BOTKIT_SLACK_TOKEN) {
   process.exit(1);
 }
 
+const token = process.env.BOTKIT_SLACK_TOKEN;
+const url   = process.env.REDISCLOUD_URL || 'redis://localhost:6379';
+
 const controller = Botkit.slackbot({
   debug: false,
-  storage: redisStorage({
-    url: process.env.REDISCLOUD_URL || 'redis://localhost:6379'
-  })
+  storage: redisStorage({url})
 });
 
 let herokuKeepalive;
@@ -26,9 +27,7 @@ controller.setupWebserver(process.env.PORT || 8080, (err, webserver) => {
   controller.createWebhookEndpoints(webserver);
 });
 
-controller.spawn({
-  token: process.env.BOTKIT_SLACK_TOKEN
-}).startRTM((err, bot) => {
+controller.spawn({token}).startRTM((err, bot) => {
   if (err) {
     throw new Error(err);
   }
