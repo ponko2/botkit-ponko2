@@ -4,18 +4,18 @@
   "version": "0.0.1",
   "author": "Takahito Nakano",
   "dependencies": {
-    "@ponko2/botkit-heroku-keepalive": "0.7.2",
-    "@ponko2/botkit-script-loader": "0.7.2",
+    "@ponko2/botkit-heroku-keepalive": "0.8.0",
+    "@ponko2/botkit-script-loader": "0.8.0",
     "@ponko2/calendar": "0.1.2",
-    "botkit": "~0.2.0",
+    "botkit": "~0.2.2",
     "botkit-storage-redis": "^1.0.1",
     "cron": "^1.1.0",
     "node-dice-js": "^0.1.2"
   },
   "devDependencies": {
-    "eslint": "^2.10.2",
+    "eslint": "^2.13.1",
     "eslint-config-ponko2": "^3.6.0",
-    "eslint-plugin-node": "^1.4.0"
+    "eslint-plugin-node": "^1.5.0"
   },
   "engines": {
     "node": "^6.x",
