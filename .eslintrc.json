@@ -1,6 +1,9 @@
 {
   "root": true,
-  "extends": "ponko2",
+  "extends": [
+    "ponko2",
+    "plugin:node/recommended"
+  ],
   "env": {
     "browser": false,
     "node": true,
@@ -13,15 +16,5 @@
       "impliedStrict": false
     }
   },
-  "plugins": ["node"],
-  "rules": {
-    "node/no-deprecated-api": "error",
-    "node/no-missing-import": "error",
-    "node/no-missing-require": "error",
-    "node/no-unpublished-import": "error",
-    "node/no-unpublished-require": "error",
-    "node/no-unsupported-features": "error",
-    "node/process-exit-as-throw": "error",
-    "node/shebang": "error"
-  }
+  "plugins": ["node"]
 }
