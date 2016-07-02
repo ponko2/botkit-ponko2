@@ -13,9 +13,9 @@
     "node-dice-js": "^0.1.2"
   },
   "devDependencies": {
-    "eslint": "^2.13.1",
-    "eslint-config-ponko2": "^3.6.0",
-    "eslint-plugin-node": "^1.5.0"
+    "eslint": "^3.0.0",
+    "eslint-config-ponko2": "^4.0.0",
+    "eslint-plugin-node": "^1.5.2"
   },
   "engines": {
     "node": "^6.x",
