@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = controller => {
+module.exports = (controller) => {
   controller.hears([
     '[ぬヌ][ーぅゥ]*[るル][ーぅゥっッ]*[ぽポ][ーぉォっッ]*',
     'ﾇ[ーｩｰ]*ﾙ[ーｩｯｰ]*ﾎﾟ[ーｫｩｯｰ]*'
@@ -24,7 +24,7 @@ module.exports = controller => {
       timestamp: message.ts,
       channel: message.channel,
       name: 'hammer'
-    }, err => {
+    }, (err) => {
       if (err) {
         bot.botkit.log('Failed to add emoji reaction :(', err);
       }

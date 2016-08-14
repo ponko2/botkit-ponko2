@@ -2,7 +2,7 @@
 
 const Calendar = require('@ponko2/calendar');
 
-module.exports = controller => {
+module.exports = (controller) => {
   const calendar = new Calendar();
 
   const reply = `\`\`\`
