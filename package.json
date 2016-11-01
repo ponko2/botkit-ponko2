@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "author": "Takahito Nakano",
   "dependencies": {
-    "@ponko2/botkit-heroku-keepalive": "0.8.0",
-    "@ponko2/botkit-script-loader": "0.8.0",
+    "@ponko2/botkit-heroku-keepalive": "0.9.0",
+    "@ponko2/botkit-script-loader": "0.9.0",
     "@ponko2/calendar": "0.1.2",
-    "botkit": "~0.2.2",
+    "botkit": "~0.4.0",
     "botkit-storage-redis": "^1.0.1",
     "cron": "^1.1.0",
     "node-dice-js": "^0.1.2",
