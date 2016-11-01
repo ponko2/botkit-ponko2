@@ -9,6 +9,7 @@ const HerokuKeepalive = require('@ponko2/botkit-heroku-keepalive');
 if (!process.env.BOTKIT_SLACK_TOKEN) {
   // eslint-disable-next-line no-console
   console.error('Error: Specify token in environment');
+  // eslint-disable-next-line no-process-exit
   process.exit(1);
 }
 
