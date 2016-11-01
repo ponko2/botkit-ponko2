@@ -9,14 +9,14 @@
     "@ponko2/calendar": "0.1.2",
     "botkit": "~0.4.0",
     "botkit-storage-redis": "^1.0.1",
-    "cron": "^1.1.0",
+    "cron": "^1.1.1",
     "node-dice-js": "^0.1.2",
     "punycode": "^2.0.1"
   },
   "devDependencies": {
-    "eslint": "^3.0.0",
+    "eslint": "^3.9.1",
     "eslint-config-ponko2": "^8.0.0",
-    "eslint-plugin-node": "^3.0.0"
+    "eslint-plugin-node": "^3.0.3"
   },
   "engines": {
     "node": "^6.x",
