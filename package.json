@@ -23,10 +23,9 @@
     "npm": "^3.x"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "server.js",
   "private": true,
   "scripts": {
-    "lint": "eslint .",
-    "start": "node index.js"
+    "lint": "eslint ."
   }
 }
