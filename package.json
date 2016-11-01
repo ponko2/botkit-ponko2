@@ -10,12 +10,13 @@
     "botkit": "~0.2.2",
     "botkit-storage-redis": "^1.0.1",
     "cron": "^1.1.0",
-    "node-dice-js": "^0.1.2"
+    "node-dice-js": "^0.1.2",
+    "punycode": "^2.0.1"
   },
   "devDependencies": {
     "eslint": "^3.0.0",
     "eslint-config-ponko2": "^8.0.0",
-    "eslint-plugin-node": "^2.0.0"
+    "eslint-plugin-node": "^3.0.0"
   },
   "engines": {
     "node": "^6.x",
