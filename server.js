@@ -13,12 +13,9 @@ if (!process.env.BOTKIT_SLACK_TOKEN) {
   process.exit(1);
 }
 
-const token = process.env.BOTKIT_SLACK_TOKEN;
-const url   = process.env.REDISCLOUD_URL || 'redis://localhost:6379';
-
 const controller = Botkit.slackbot({
   debug: false,
-  storage: redisStorage({url})
+  storage: redisStorage({url: process.env.REDISCLOUD_URL || 'redis://localhost:6379'})
 });
 
 let herokuKeepalive;
@@ -42,16 +39,7 @@ const saveBotIdentify = function (identify) {
   });
 };
 
-controller.setupWebserver(process.env.PORT || 8080, (err, webserver) => {
-  herokuKeepalive = new HerokuKeepalive(controller);
-  controller.createWebhookEndpoints(webserver);
-});
-
-controller.spawn({token}).startRTM((err, bot) => {
-  if (err) {
-    throw new Error(err);
-  }
-
+controller.on('rtm_open', (bot) => {
   const loader   = new ScriptLoader(controller, bot);
   const scripts  = Path.resolve(__dirname, 'scripts');
   const commands = Path.resolve(__dirname, 'commands');
@@ -61,3 +49,15 @@ controller.spawn({token}).startRTM((err, bot) => {
   saveBotIdentify(bot.identifyBot());
   herokuKeepalive.start();
 });
+
+controller
+  .setupWebserver(process.env.PORT || 8080, (err, webserver) => {
+    herokuKeepalive = new HerokuKeepalive(controller);
+    controller.createWebhookEndpoints(webserver);
+  })
+  .spawn({token: process.env.BOTKIT_SLACK_TOKEN})
+  .startRTM((err) => {
+    if (err) {
+      throw new Error(err);
+    }
+  });
