@@ -23,6 +23,25 @@ const controller = Botkit.slackbot({
 
 let herokuKeepalive;
 
+const saveBotIdentify = function (identify) {
+  const {name, id: user_id, team_id} = identify;
+
+  controller.findTeamById(team_id, (err, team) => {
+    if (err) {
+      throw new Error(err);
+    }
+
+    const bot = Object.assign({user_id, name}, team.bot || {});
+
+    // eslint-disable-next-line no-shadow
+    controller.saveTeam(Object.assign(team, {bot}), (err) => {
+      if (err) {
+        throw new Error(err);
+      }
+    });
+  });
+};
+
 controller.setupWebserver(process.env.PORT || 8080, (err, webserver) => {
   herokuKeepalive = new HerokuKeepalive(controller);
   controller.createWebhookEndpoints(webserver);
@@ -39,5 +58,6 @@ controller.spawn({token}).startRTM((err, bot) => {
 
   loader.load(scripts);
   loader.load(commands);
+  saveBotIdentify(bot.identifyBot());
   herokuKeepalive.start();
 });
