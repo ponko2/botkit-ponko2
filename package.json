@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "eslint": "^3.13.0",
-    "eslint-config-ponko2": "^9.0.0",
+    "eslint-config-ponko2": "^10.0.0",
     "eslint-plugin-node": "^3.0.5"
   },
   "engines": {

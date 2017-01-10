@@ -2,8 +2,8 @@
 
 /* eslint no-unused-vars: 0 */
 
-const CronJob  = require('cron').CronJob;
-const Calendar = require('@ponko2/calendar');
+const {CronJob} = require('cron');
+const Calendar  = require('@ponko2/calendar');
 
 // channelのIDは下記のURLより調べることが可能
 // https://api.slack.com/methods/channels.list/test
