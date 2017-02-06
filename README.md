@@ -1,5 +1,7 @@
 # botkit-ponko2
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ponko2/botkit-ponko2.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/ponko2/botkit-ponko2.svg?branch=master)](https://travis-ci.org/ponko2/botkit-ponko2)
 
 ## Usage
