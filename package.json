@@ -14,7 +14,7 @@
     "punycode": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^3.13.0",
+    "eslint": "^4.1.0",
     "eslint-config-ponko2": "^10.0.0",
     "eslint-plugin-node": "^4.0.0"
   },
