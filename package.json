@@ -14,12 +14,12 @@
     "punycode": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^3.13.0",
-    "eslint-config-ponko2": "^10.0.0",
-    "eslint-plugin-node": "^4.0.0"
+    "eslint": "^4.1.1",
+    "eslint-config-ponko2": "^11.0.0",
+    "eslint-plugin-node": "^5.1.0"
   },
   "engines": {
-    "node": "^6.x",
+    "node": "^7.x",
     "npm": "^3.x"
   },
   "license": "MIT",
