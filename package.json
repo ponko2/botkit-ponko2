@@ -7,7 +7,7 @@
     "@ponko2/botkit-heroku-keepalive": "^0.10.0",
     "@ponko2/botkit-script-loader": "^0.10.0",
     "@ponko2/calendar": "^0.1.2",
-    "botkit": "~0.5.5",
+    "botkit": "~0.6.0",
     "botkit-storage-redis": "^1.1.0",
     "cron": "^1.2.1",
     "node-dice-js": "^0.1.2",
